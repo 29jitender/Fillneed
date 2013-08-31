@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FleeD</string>
+    <string name="swipe_label">Swipe!</string>
+    <string name="swipe_left_label">Swipe left!</string>
+    <string name="swipe_right_label">Swipe right!</string>
+    <string name="swipe_up_label">Swipe up!</string>
+    <string name="swipe_down_label">Swipe down!</string>
+    <string name="label_right">Right</string>
+    <string name="label_left">Left</string>
+    <string name="label_middle">Middle</string>
+    <string name="label_top">Top</string>
+    <string name="label_bottom">Bottom</string>
+    <string name="not_applicable">n/a</string>
+
+    
+    
+    
+    <string-array name="catt">
+<item>1</item>
+<item>2</item>
+<item>3</item>
+<item>4</item>
+<item>5</item>
+<item>6</item>
+</string-array>
+
+    <string name="pref_go">Go!</string>
+    <string name="title_activity_fillneed">Fillneed</string>
+    <string name="action_settings">Settings</string>
+ 
+    
+    <string name="filter">&#xF0B0;</string>
+    
+</resources>

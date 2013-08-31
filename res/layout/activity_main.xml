@@ -1,0 +1,187 @@
+ 
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+     >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+         android:id="@+id/navigation"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="#e11e1e" >
+
+               <com.example.fillneed.Icon_font
+                   android:id="@+id/filter"
+                   style="?android:attr/buttonStyleSmall"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentBottom="true"
+                   android:layout_alignParentRight="true"
+                   android:layout_alignParentTop="true"
+                   android:layout_marginLeft="10dip"
+                   android:background="@null"
+                   android:scaleType="centerInside"
+                   android:text="@string/filter"
+                   android:textColor="#f6f6f6"
+                       		        android:onClick="buttonClicked"
+                   
+                   android:textSize="30dip" />
+
+       <ImageView
+           android:id="@+id/home_userimage"
+           android:layout_width="60dp"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true"
+           android:src="@drawable/ic_launcher" />
+
+       <TextView
+           android:id="@+id/home_username"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBaseline="@+id/filter"
+           android:layout_alignBottom="@+id/filter"
+           android:layout_toRightOf="@+id/home_userimage"
+           android:text="Jitender Chaudhary"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+
+    </RelativeLayout>
+    
+    <ListView
+	    android:layout_below="@+id/navigation"
+        android:id="@+id/custom_list"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+      		android:background="@android:color/transparent" 
+			android:dividerHeight="0dp"
+			android:divider="@null"			
+ 			
+        />
+    
+     
+
+    <com.slidinglayer.SlidingLayer
+        xmlns:slidingLayer="http://schemas.android.com/apk/res/com.slidinglayersample"
+        android:id="@+id/slidingLayer1"
+        android:layout_width="@dimen/layer_width"
+        android:layout_height="match_parent">
+    <!--slidingLayer:shadowDrawable="@drawable/sidebar_shadow"
+        slidingLayer:shadowWidth="@dimen/shadow_width"
+        slidingLayer:offsetWidth="@dimen/offset_width"
+        slidingLayer:stickTo="auto|right|left|middle"
+        slidingLayer:closeOnTapEnabled="true">-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#e7e7e7">
+                
+           
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:background="#14ad8f"
+        android:text="You got something ?"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/editText1"
+        android:layout_toLeftOf="@+id/editText1"
+        android:text="something"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<Spinner
+    android:id="@+id/catt_spinner"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/editText1"
+    android:layout_toRightOf="@+id/textView2"
+    android:drawSelectorOnTop="true"
+    android:entries="@array/catt" />
+
+<TextView
+    android:id="@+id/textView3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignTop="@+id/catt_spinner"
+    android:layout_marginTop="20dp"
+    android:layout_toLeftOf="@+id/catt_spinner"
+    android:text="category "
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<Button
+    android:id="@+id/need_post"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="buttonClicked"
+    
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="96dp"
+    android:text="Post" />
+
+        </RelativeLayout>
+
+    </com.slidinglayer.SlidingLayer>
+
+    <com.slidinglayer.SlidingLayer
+        xmlns:slidingLayer="http://schemas.android.com/apk/res/com.slidinglayersample"
+        android:id="@+id/slidingLayer_right"
+        android:layout_width="@dimen/layer_width"
+        android:layout_height="match_parent">
+    <!--slidingLayer:shadowDrawable="@drawable/sidebar_shadow"
+        slidingLayer:shadowWidth="@dimen/shadow_width"
+        slidingLayer:offsetWidth="@dimen/offset_width"
+        slidingLayer:stickTo="auto|right|left|middle"
+        slidingLayer:closeOnTapEnabled="true">-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#e7e7e7">
+      <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="36dp"
+        android:text="filter"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+        </RelativeLayout>
+
+    </com.slidinglayer.SlidingLayer>
+    
+    
+    
+    
+</RelativeLayout>
