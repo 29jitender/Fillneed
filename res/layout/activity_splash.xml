@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Splash" >
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp" />
+
+    <ImageView
+        android:id="@+id/leaf1"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignLeft="@+id/leaf3"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/leaf1" />
+
+    <ImageView
+        android:id="@+id/leaf3"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignLeft="@+id/leaf2"
+        android:layout_alignTop="@+id/leaf1"
+        android:src="@drawable/leaf3" />
+
+    <ImageView
+        android:id="@+id/leaf2"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignTop="@+id/leaf1"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/leaf2" />
+
+</RelativeLayout>
