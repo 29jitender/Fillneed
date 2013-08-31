@@ -91,29 +91,31 @@ containing a value of this type.
         public static final int sidebar_shadow=0x7f020001;
     }
     public static final class id {
-        public static final int RelativeLayout1=0x7f040016;
-        public static final int action_settings=0x7f040017;
+        public static final int RelativeLayout1=0x7f040018;
+        public static final int action_settings=0x7f040019;
         public static final int auto=0x7f040000;
         public static final int bottom=0x7f040005;
-        public static final int catt_spinner=0x7f04000f;
-        public static final int custom_list=0x7f04000a;
-        public static final int editText1=0x7f04000d;
+        public static final int catt_spinner=0x7f040011;
+        public static final int custom_list=0x7f04000c;
+        public static final int editText1=0x7f04000f;
         public static final int filter=0x7f040007;
         public static final int home_userimage=0x7f040008;
         public static final int home_username=0x7f040009;
-        public static final int item_image=0x7f040013;
-        public static final int item_location=0x7f040015;
-        public static final int itemname=0x7f040014;
+        public static final int item_image=0x7f040015;
+        public static final int item_location=0x7f040017;
+        public static final int itemname=0x7f040016;
         public static final int left=0x7f040002;
         public static final int middle=0x7f040003;
         public static final int navigation=0x7f040006;
-        public static final int need_post=0x7f040011;
+        public static final int navigation1=0x7f04000a;
+        public static final int need_post=0x7f040013;
         public static final int right=0x7f040001;
-        public static final int slidingLayer1=0x7f04000b;
-        public static final int slidingLayer_right=0x7f040012;
-        public static final int textView1=0x7f04000c;
-        public static final int textView2=0x7f04000e;
-        public static final int textView3=0x7f040010;
+        public static final int search=0x7f04000b;
+        public static final int slidingLayer1=0x7f04000d;
+        public static final int slidingLayer_right=0x7f040014;
+        public static final int textView1=0x7f04000e;
+        public static final int textView2=0x7f040010;
+        public static final int textView3=0x7f040012;
         public static final int top=0x7f040004;
     }
     public static final class layout {

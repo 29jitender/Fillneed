@@ -90,16 +90,15 @@ public class MainActivity extends Activity {
         set.addAnimation(animation);
         LayoutAnimationController controller = new LayoutAnimationController(set, 0.5f);
     	
+        for(int i=0;i<10;i++){     	
+    
     	Item data = new Item();
-        data.settitle("Item 1");    
+        data.settitle("Item "+i);    
         data.setlocation("Delhi");
         data.seturl("https://si0.twimg.com/profile_images/3690637553/5c348fee8afbcefa1978004a864a51ce.png");
         list_details.add(data);
-        data.settitle("Item 2");    
-        data.setlocation("Noida");
-        data.seturl("https://si0.twimg.com/profile_images/3690637553/5c348fee8afbcefa1978004a864a51ce.png");
-        list_details.add(data);
-		    lv1 = (ListView) findViewById(R.id.custom_list);
+        }
+ 		    lv1 = (ListView) findViewById(R.id.custom_list);
 		adapter=new CustomListAdapter(this, list_details);
 		lv1.setAdapter(adapter);
 	 

@@ -29,7 +29,7 @@
                    android:scaleType="centerInside"
                    android:text="@string/filter"
                    android:textColor="#f6f6f6"
-                       		        android:onClick="buttonClicked"
+                     android:onClick="buttonClicked"
                    
                    android:textSize="30dip" />
 
@@ -54,17 +54,39 @@
         
 
     </RelativeLayout>
-    
-    <ListView
-	    android:layout_below="@+id/navigation"
+
+        <RelativeLayout
+            android:id="@+id/navigation1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/navigation"
+            android:background="#fff" >
+
+       <SearchView
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+   	 </SearchView>
+        <ListView
+	    android:layout_below="@+id/search"
         android:id="@+id/custom_list"
         android:layout_height="fill_parent"
         android:layout_width="fill_parent"
       		android:background="@android:color/transparent" 
 			android:dividerHeight="0dp"
-			android:divider="@null"			
+			android:divider="@null"	
+			android:layout_marginBottom="25dp"		
  			
         />
+       </RelativeLayout>
+
     
      
 
@@ -166,7 +188,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#e7e7e7">
+           >
       <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"

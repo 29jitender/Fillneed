@@ -6,15 +6,13 @@
     android:orientation="vertical"
     android:background="#f1f1f1" >
 
-    <TextView
-        android:id="@+id/textView1"
+    <SearchView
+        android:id="@+id/search"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="25dp"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="52dp"
-        android:layout_marginTop="36dp"
-        android:text="filter"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
- 
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+    </SearchView>
 </RelativeLayout>
