@@ -8,15 +8,15 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="112dp"
+        android:layout_height="110dp"
         android:background="@android:color/transparent"
         android:gravity="center_vertical" 
         android:layout_marginTop="15dp">
 
         <ImageView
             android:id="@+id/item_image"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:src="@drawable/ic_launcher" />
@@ -25,19 +25,81 @@
             android:id="@+id/itemname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
             android:layout_alignTop="@+id/item_image"
             android:layout_toRightOf="@+id/item_image"
-            android:textColor="#ff6600"
-            android:text="Some stuff"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
+            android:maxLines="2"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#99d2df" />
 
         <TextView
             android:id="@+id/item_location"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/itemname"
-            android:layout_centerVertical="true"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/textView1"
             android:text="Delhi" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/item_location"
+            android:layout_toRightOf="@+id/item_location"
+              >
+
+		    <com.example.fillneed.Icon_font
+		        android:id="@+id/textView3"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:layout_alignParentTop="true"
+		        android:layout_marginRight="14dp"
+		        android:textSize="20dp"
+		        android:textColor="#b3b3b3"
+		        android:text="@string/facebook" />
+
+		    <com.example.fillneed.Icon_font
+		        android:id="@+id/textView2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentTop="true"
+		        android:layout_marginRight="18dp"
+		        		        android:textSize="20dp"
+		        		        android:textColor="#b3b3b3"
+		        
+		        android:layout_toLeftOf="@+id/textView3"
+		        android:text="@string/twitter" />
+
+		    <com.example.fillneed.Icon_font
+		        android:id="@+id/textView5"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentTop="true"
+		        		        android:textSize="20dp"
+		        
+		        		        android:layout_toLeftOf="@+id/textView2"
+		        			        android:textColor="#b3b3b3"
+		        		        android:layout_marginRight="18dp"
+		        
+		        android:layout_centerHorizontal="true"
+		        android:text="@string/share" />
+
+        </RelativeLayout>
+
+        <com.example.fillneed.Icon_font
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_alignLeft="@+id/itemname"
+            android:layout_below="@+id/itemname"
+            android:textSize="25dp"
+            android:text="@string/location" />
  
     </RelativeLayout>
   

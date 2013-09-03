@@ -2,20 +2,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@drawable/splash_back"
+ 
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".Splash" >
-
-    <ProgressBar
-        android:id="@+id/progressBar1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="28dp" />
 
     <ImageView
         android:id="@+id/leaf1"
@@ -40,5 +30,38 @@
         android:layout_alignTop="@+id/leaf1"
         android:layout_centerHorizontal="true"
         android:src="@drawable/leaf2" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/leaf1"
+        android:layout_marginTop="45dp"
+        android:text="Danpatr"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="44sp" />
+
+    <ImageView
+        android:id="@+id/login_facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="68dp"
+        android:src="@drawable/login_fb" />
+
+    <ImageView
+        android:id="@+id/login_twitter"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/login_facebook"
+        android:layout_marginTop="42dp"
+        android:src="@drawable/login_twt" />
 
 </RelativeLayout>

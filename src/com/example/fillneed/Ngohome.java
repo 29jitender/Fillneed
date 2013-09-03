@@ -53,18 +53,18 @@ import android.view.animation.LayoutAnimationController;
 import android.view.animation.TranslateAnimation;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.RelativeLayout.LayoutParams;
 import android.widget.TextView;
 
 import com.androidquery.AQuery;
 import com.slidinglayer.SlidingLayer;
  
-public class MainActivity extends Activity implements LocationListener {
+public class Ngohome extends Activity implements LocationListener {
     LocationManager mLocationManager;
     TextView user_location;
     Location location;
@@ -82,18 +82,9 @@ public class MainActivity extends Activity implements LocationListener {
     String latitud ;
     String longitude;
     String ongitud ;
-    String[] item_name={"Isha has Donated 10 blankets",
-    		"Goonj collected book from Sahil",
-    		"Goonj just entered the silver leauge",
-    		"Arun upvoted Helpage India",
-    		"Isha has Donated 10 blankets","Goonj collected book from Sahil","Goonj just entered the silver leauge","Arun upvoted Helpage India",
-    		"Goonj just entered the silver leauge",
-    		"Arun upvoted Helpage India"};
-    String[] item_imagelocation={"Delhi","Noida","Delhi","Assam","Hyderabad","Delhi","Gujarat","Go","Bangalore","Jaipur"};
-    String[] item_locationurl={"https://m.ak.fbcdn.net/sphotos-h.ak/hphotos-ak-prn1/311384_260039760694627_1693173061_n.jpg",
-    		"https://m.ak.fbcdn.net/sphotos-e.ak/hphotos-ak-ash4/1002539_10151785395248784_661839182_n.jpg",
-    		"http://www.ecowalkthetalk.com/blog/wp-content/uploads/2010/08/Goonj-Logo.png",
-    		"https://m.ak.fbcdn.net/sphotos-h.ak/hphotos-ak-prn1/76314_10151844978648132_2075543312_n.jpg","https://m.ak.fbcdn.net/sphotos-e.ak/hphotos-ak-ash4/1002539_10151785395248784_661839182_n.jpg","https://m.ak.fbcdn.net/sphotos-h.ak/hphotos-ak-prn1/76314_10151844978648132_2075543312_n.jpg","https://m.ak.fbcdn.net/sphotos-b.ak/hphotos-ak-prn1/1234128_10201915634991327_1335961593_n.jpg","https://m.ak.fbcdn.net/sphotos-e.ak/hphotos-ak-ash4/1002539_10151785395248784_661839182_n.jpg","https://m.ak.fbcdn.net/sphotos-h.ak/hphotos-ak-prn1/311384_260039760694627_1693173061_n.jpg","https://m.ak.fbcdn.net/sphotos-h.ak/hphotos-ak-prn1/76314_10151844978648132_2075543312_n.jpg"};
+    String[] item_name={"Delhi","Noida","Delhi","Assam","Hyd","Delhi","guj","panji","Banglor","Jaipur"};
+    String[] item_imageurl={"Delhi","Noida","Delhi","Assam","Hyd","Delhi","guj","panji","Banglor","Jaipur"};
+    String[] item_location={"https://m.ak.fbcdn.net/sphotos-h.ak/hphotos-ak-prn1/311384_260039760694627_1693173061_n.jpg","https://m.ak.fbcdn.net/sphotos-b.ak/hphotos-ak-prn1/1234128_10201915634991327_1335961593_n.jpg","https://m.ak.fbcdn.net/sphotos-h.ak/hphotos-ak-prn1/76314_10151844978648132_2075543312_n.jpg","Assam","Hyd","Delhi","guj","panji","Banglor","Jaipur"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -104,6 +95,21 @@ public class MainActivity extends Activity implements LocationListener {
         mShowShadow = false;
      	this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN); //open only keyboard when user click
     	
+     	TextView t1=(TextView)findViewById(R.id.home_username);
+     	t1.setText("Plan India");
+     	String[] item_name={"Isha has Donated 10 blankets",
+        		"Goonj collected book from Sahil",
+        		"Goonj just entered the silver leauge",
+        		"Arun upvoted Helpage India",
+        		"Isha has Donated 10 blankets","Goonj collected book from Sahil","Goonj just entered the silver leauge","Arun upvoted Helpage India",
+        		"Goonj just entered the silver leauge",
+        		"Arun upvoted Helpage India"};
+        String[] item_imagelocation={"Delhi","Noida","Delhi","Assam","Hyderabad","Delhi","Gujarat","Go","Bangalore","Jaipur"};
+        String[] item_locationurl={"https://m.ak.fbcdn.net/sphotos-h.ak/hphotos-ak-prn1/311384_260039760694627_1693173061_n.jpg",
+        		"https://m.ak.fbcdn.net/sphotos-e.ak/hphotos-ak-ash4/1002539_10151785395248784_661839182_n.jpg",
+        		"http://www.ecowalkthetalk.com/blog/wp-content/uploads/2010/08/Goonj-Logo.png",
+        		"https://m.ak.fbcdn.net/sphotos-h.ak/hphotos-ak-prn1/76314_10151844978648132_2075543312_n.jpg","https://m.ak.fbcdn.net/sphotos-e.ak/hphotos-ak-ash4/1002539_10151785395248784_661839182_n.jpg","https://m.ak.fbcdn.net/sphotos-h.ak/hphotos-ak-prn1/76314_10151844978648132_2075543312_n.jpg","https://m.ak.fbcdn.net/sphotos-b.ak/hphotos-ak-prn1/1234128_10201915634991327_1335961593_n.jpg","https://m.ak.fbcdn.net/sphotos-e.ak/hphotos-ak-ash4/1002539_10151785395248784_661839182_n.jpg","https://m.ak.fbcdn.net/sphotos-h.ak/hphotos-ak-prn1/311384_260039760694627_1693173061_n.jpg","https://m.ak.fbcdn.net/sphotos-h.ak/hphotos-ak-prn1/76314_10151844978648132_2075543312_n.jpg"};
+     
         bindViews("bottom");
       
 
@@ -140,22 +146,20 @@ public class MainActivity extends Activity implements LocationListener {
         LayoutAnimationController controller = new LayoutAnimationController(set, 0.5f);
     	
         for(int i=0;i<item_locationurl.length;i++){     	
-    
-    	Item data = new Item();
-        data.settitle(item_name[i]);    
-        data.setlocation(item_imagelocation[i] );
-        
-        data.seturl(item_locationurl[i]);
-        list_details.add(data);
-        }
+            
+        	Item data = new Item();
+            data.settitle(item_name[i]);    
+            data.setlocation(item_imagelocation[i] );
+            
+            data.seturl(item_locationurl[i]);
+            list_details.add(data);
+            }
  		    list_home = (ListView) findViewById(R.id.custom_list);
 		adapter=new CustomListAdapter(this, list_details);
 		list_home.setAdapter(adapter);
 	 
 		list_home.setLayoutAnimation(controller);
-		
-		
-		
+			
 		list_home.setOnItemClickListener(new OnItemClickListener() {
 
  			@Override
@@ -164,10 +168,9 @@ public class MainActivity extends Activity implements LocationListener {
  				Item newsData = (Item) o;
  				 String pass =newsData.toString();
  				String name = pass.substring(0, pass.indexOf(','));
- 				Intent share = new Intent(Intent.ACTION_SEND);
-				share.setType("text/plain");
-				share.putExtra(Intent.EXTRA_TEXT, name);
-				startActivity(Intent.createChooser(share, "Share it ")); 				
+ 			 	Intent myIntent = new Intent(Ngohome.this, Item_detail.class);
+		    	Ngohome.this.startActivity(myIntent);
+		    	overridePendingTransition(R.anim.fade_in, R.anim.fade_out); 			
  			 
  			}
 
@@ -180,18 +183,16 @@ public class MainActivity extends Activity implements LocationListener {
 		
 		
 		
-		
-		
 		ImageView profile=(ImageView)findViewById(R.id.home_userimage);
-		profile.setImageResource(R.drawable.userimage);
+		profile.setImageResource(R.drawable.ngoimage);
 		profile.setOnClickListener(new OnClickListener() 
 		   {
 		    @Override          
 		    public void onClick(View v) 
 		    {              
-//		    	Intent myIntent = new Intent(MainActivity.this, Userprofile.class);
-//		    	MainActivity.this.startActivity(myIntent);
-//		    	overridePendingTransition(R.anim.fade_in, R.anim.fade_out); 	
+		    	Intent myIntent = new Intent(Ngohome.this, Userprofile.class);
+		    	Ngohome.this.startActivity(myIntent);
+		    	overridePendingTransition(R.anim.fade_in, R.anim.fade_out); 	
 		    
 		    	}         
 		   });	
@@ -236,7 +237,7 @@ public class MainActivity extends Activity implements LocationListener {
         rlp.height = LayoutParams.MATCH_PARENT;
         rlp.width = getResources().getDimensionPixelSize(R.dimen.layer_width_left);
     	if(direction.equals("bottom")){
-             initState("bottom",slide_buttom,true);
+             initState("bottom",slide_buttom,false);
 
     	}
     	else if(direction.equals("right")){

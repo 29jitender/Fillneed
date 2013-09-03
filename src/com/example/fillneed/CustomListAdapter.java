@@ -1,6 +1,7 @@
 package com.example.fillneed;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 import com.example.fillneed.R;
  import android.content.Context;
@@ -89,6 +90,26 @@ public class CustomListAdapter extends BaseAdapter {
  
 		ImageView imageItem;
 	}
-	
+	 // Filter Class
+    public void filter(String charText) {
+        charText = charText.toLowerCase(Locale.getDefault());
+        listData.clear();
+        if (charText.length() == 0) {
+        	listData.addAll(arraylist);
+        } else {
+            for (Item wp : arraylist) {
+                if (wp.gettitle().toLowerCase(Locale.getDefault())
+                        .contains(charText)) {
+                	listData.add(wp);
+                }
+                else if (wp.getlocation().toLowerCase(Locale.getDefault())
+                        .contains(charText)) {
+                	listData.add(wp);
+                }
+                
+            }
+        }
+        notifyDataSetChanged();
+    }
 	 
 }

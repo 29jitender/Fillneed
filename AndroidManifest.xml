@@ -10,6 +10,15 @@
 
     <uses-permission android:name="android.permission.INTERNET" >
     </uses-permission>
+    <uses-permission android:name="android.permission.CAMERA" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    
+    <uses-feature android:name="android.hardware.camera" >
+    </uses-feature>
 
     <application
         android:allowBackup="true"
@@ -18,9 +27,8 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.example.fillneed.Splash"
-            android:label="@string/app_name" 
-                        android:theme="@android:style/Theme.NoTitleBar"
-            >
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -32,9 +40,16 @@
             android:label="@string/title_activity_userprofile" >
         </activity>
         <activity
-            
             android:name="com.example.fillneed.MainActivity"
-            android:label="@string/title_activity_splash" >
+            >
+        </activity>
+          <activity
+            android:name="com.example.fillneed.Ngohome"
+               >
+        </activity>
+        <activity
+            android:name="com.example.fillneed.Item_detail"
+            android:label="@string/title_activity_item_detail" >
         </activity>
     </application>
 

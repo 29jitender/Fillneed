@@ -27,8 +27,27 @@
     <string name="title_activity_fillneed">Fillneed</string>
     <string name="action_settings">Settings</string>
     <string name="filter">&#xF0B0;</string>
+    <string name="location">&#xF041;</string>
+    <string name="facebook">&#xF09A;</string>
+    <string name="twitter">&#xF099;</string>
+    <string name="share">&#xF045;</string>
+    <string name="submit">&#xF102;</string>
+    <string name="time">&#xF017;</string>
+    <string name="female">&#xF182;</string>
+    <string name="laptop">&#xF109;</string>
+    <string name="book">&#xF02D;</string>
+    <string name="home">&#xF015;</string>
+    <string name="something">&#xF187;</string>
+    <string name="gear">&#xF013;</string>
+    <string name="search">&#xF002;</string>
+        <string name="gpslocation">&#xF124;</string>
+           <string name="email">&#xF003;</string>
+
+               <string name="sms">&#xF0E5;</string>
+           
     <string name="title_activity_userprofile">Userprofile</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_splash">Splash</string>
+    <string name="title_activity_item_detail">Item_detail</string>
 
 </resources>

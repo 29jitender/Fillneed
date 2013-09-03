@@ -1,47 +1,117 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainscroll"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    
-    tools:context=".Userprofile" >
+    android:layout_height="match_parent" 
+     >
 
-    <ImageView
-        android:id="@+id/up_image"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:src="@drawable/ic_launcher" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1000dp"
+        tools:context=".Userprofile" >
 
-    <TextView
-        android:id="@+id/up_name"
-        android:layout_width="wrap_content"
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ngoimage" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:text="Plan India"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignRight="@+id/imageView1"
+            android:text="Delhi,India" />
+
+        <com.example.fillneed.Icon_font
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_toLeftOf="@+id/imageView1"
+            android:text="@string/location" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView1"
+            android:layout_margin="30dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="24dp"
+            android:text="Plan India is an Indian NGO working to improve the lives of disadvantaged children, their families and communities through an approach that puts children at the centre of community development." />
+
+        <LinearLayout
+            android:id="@+id/rel"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="43dp"
+            android:background="#000" >
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="New" 
+                 android:textColor="#fff" 
+ android:layout_gravity="center_vertical"
+                                android:gravity="center"                
+                android:layout_weight="0.3"/>
+		 
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="In Process"
+                android:layout_gravity="center_vertical"
+                                android:gravity="center"
+                 android:textColor="#fff" 
+                android:layout_weight="0.3" />
+ <View
+        android:id="@+id/view1"
+        android:layout_width="1dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/imageView1"
-        android:text="Jitender Chaudhary"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:layout_below="@+id/textView1"
+        android:textColor="#cf12cf" />
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Collected" 
+                 android:textColor="#fff" 
+ android:layout_gravity="center_vertical"
+                                android:gravity="center"                android:layout_weight="0.3"/>
 
-    <TextView
-        android:id="@+id/up_email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/up_name"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/up_name"
-        android:layout_marginTop="14dp"
-        android:text="29jitender@gmail.com"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/up_image"
-        android:layout_alignLeft="@+id/up_email"
-        android:layout_alignParentRight="true"
-        android:text="+919999187849"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <ListView
+        android:id="@+id/custom_list"
+        android:layout_width="fill_parent"
+        android:layout_height="800dp"
+        android:layout_below="@+id/rel"
+        android:background="@android:color/transparent"
+        android:divider="@null"
+        android:dividerHeight="0dp" />
 
-</RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

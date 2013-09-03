@@ -4,7 +4,7 @@
 <resources>
     <dimen name="shadow_width">8dp</dimen>
     <dimen name="layer_width">500dp</dimen>
-        <dimen name="layer_width_left">200dp</dimen>
+        <dimen name="layer_width_left">180dp</dimen>
     
     <dimen name="offset_width">48dp</dimen>
 </resources>
